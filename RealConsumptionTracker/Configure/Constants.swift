@@ -21,6 +21,8 @@ struct Constants {
     static let checkUserData: String = "/checkUserData"
     static let partialMileage: String = "/partialMileage"
     static let getAllRefuelsByUser: String = "/getAllRefuelsByUser"
+    static let setCurrentOdometer: String = "/setCurrentOdometer"
+    static let newRefuel: String = "/newRefuel"
     
     // MARK: - CollectionViews
     static let defaultBarHeight: Float = 170

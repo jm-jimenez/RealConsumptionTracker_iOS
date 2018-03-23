@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0000E27D206507F800CA3DB2 /* NewRefuelRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000E27C206507F800CA3DB2 /* NewRefuelRequest.swift */; };
+		0000E27E206507F800CA3DB2 /* NewRefuelRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000E27C206507F800CA3DB2 /* NewRefuelRequest.swift */; };
 		00341CE92064E88000F672A4 /* UIView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00341CE82064E88000F672A4 /* UIView+Util.swift */; };
 		00341CEA2064E88000F672A4 /* UIView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00341CE82064E88000F672A4 /* UIView+Util.swift */; };
 		00EBD0842063A2E800FA8170 /* NoDataFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00EBD0832063A2E800FA8170 /* NoDataFoundView.xib */; };
@@ -121,6 +123,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0000E27C206507F800CA3DB2 /* NewRefuelRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRefuelRequest.swift; sourceTree = "<group>"; };
 		00341CE82064E88000F672A4 /* UIView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Util.swift"; sourceTree = "<group>"; };
 		00EBD0832063A2E800FA8170 /* NoDataFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataFoundView.xib; sourceTree = "<group>"; };
 		00EBD0862063A2F900FA8170 /* NoDataFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataFoundView.swift; sourceTree = "<group>"; };
@@ -213,6 +216,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0000E27B206507C800CA3DB2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0000E27C206507F800CA3DB2 /* NewRefuelRequest.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		1A114ECA205D32E3008FB1FB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +273,7 @@
 		1A121C8F205DA72800EE276C /* NewRefuel */ = {
 			isa = PBXGroup;
 			children = (
+				0000E27B206507C800CA3DB2 /* Data */,
 				1A121C90205DA72800EE276C /* View */,
 				1A121C91205DA73E00EE276C /* NewRefuelWireframe.swift */,
 				1A121C97205DA80600EE276C /* NewRefuelPresenter.swift */,
@@ -788,6 +800,7 @@
 				1A174E90205E790E005A7375 /* RefuelsAPIClient.swift in Sources */,
 				1A121C9A205DA86D00EE276C /* NewRefuelInteractor.swift in Sources */,
 				1A114EE8205D56C9008FB1FB /* PartialMileageResponse.swift in Sources */,
+				0000E27D206507F800CA3DB2 /* NewRefuelRequest.swift in Sources */,
 				00EBD0902063CD3500FA8170 /* NewRefuelViewModel.swift in Sources */,
 				1A114EDD205D40C1008FB1FB /* Constants.swift in Sources */,
 				1A174E8D205E78CB005A7375 /* RefuelsDataManager.swift in Sources */,
@@ -839,6 +852,7 @@
 				1A174E91205E790E005A7375 /* RefuelsAPIClient.swift in Sources */,
 				1A83502A205E6DFA0074F511 /* NewRefuelInteractor.swift in Sources */,
 				1A83502B205E6DFA0074F511 /* PartialMileageResponse.swift in Sources */,
+				0000E27E206507F800CA3DB2 /* NewRefuelRequest.swift in Sources */,
 				00EBD0912063CD3500FA8170 /* NewRefuelViewModel.swift in Sources */,
 				1A83502C205E6DFA0074F511 /* Constants.swift in Sources */,
 				1A174E8E205E78CB005A7375 /* RefuelsDataManager.swift in Sources */,

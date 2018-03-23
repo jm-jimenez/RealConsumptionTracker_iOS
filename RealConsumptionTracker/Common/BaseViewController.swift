@@ -14,6 +14,7 @@ protocol BaseViewControllerProtocol: AnyObject {
     func showLoading()
     func hideLoading()
     func showError(_ error: BaseError)
+    func dismiss()
 }
 
 class BaseViewController: UIViewController, BaseViewControllerProtocol {
@@ -42,5 +43,9 @@ class BaseViewController: UIViewController, BaseViewControllerProtocol {
         let button = PopupDialogButton(title: "OK", action: nil)
         popup.addButton(button)
         self.present(popup, animated: true, completion: nil)
+    }
+    
+    func dismiss() {
+        self.dismiss(animated: true, completion: nil)
     }
 }

@@ -10,6 +10,7 @@ import Foundation
 
 protocol NewRefuelInteractorInputProtocol {
     func getAlias() -> String?
+    func addRefuelWith(newRefuelRequest: NewRefuelRequest)
 }
 
 class NewRefuelInteractor: NewRefuelInteractorInputProtocol {
@@ -24,5 +25,14 @@ class NewRefuelInteractor: NewRefuelInteractorInputProtocol {
     
     func getAlias() -> String? {
         return self.alias
+    }
+    
+    func addRefuelWith(newRefuelRequest: NewRefuelRequest) {
+        if let alias = alias { newRefuelRequest.alias = alias }
+        dataManager?.saveRefuelWith(newRefuelRequest: newRefuelRequest, success: {
+            self.presenter?.refuelSaved()
+        }, failure: { (error) in
+            self.presenter?.showError(error)
+        })
     }
 }

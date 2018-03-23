@@ -20,6 +20,14 @@ class NewRefuelViewController: BaseViewController, NewRefuelViewControllerProtoc
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var fullButton: CheckBoxButton!
     
+    @IBOutlet weak var litresLabel: UILabel!
+    @IBOutlet weak var eurosLabel: UILabel!
+    
+    @IBOutlet weak var odoTextField: UITextField!
+    @IBOutlet weak var litresTextField: UITextField!
+    @IBOutlet weak var eurosTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(false, animated: true)
@@ -40,8 +48,29 @@ class NewRefuelViewController: BaseViewController, NewRefuelViewControllerProtoc
         if viewModel.isNewUser {
             fullButton.isSelected = true
             fullButton.isUserInteractionEnabled = false
+            litresLabel.removeFromSuperview()
+            eurosLabel.removeFromSuperview()
+            litresTextField.removeFromSuperview()
+            eurosTextField.removeFromSuperview()
         } else {
             fullButton.isSelected = false
         }
+    }
+    
+    @IBAction func didEditTextField(_ sender: UITextField) {
+        switch sender {
+        case odoTextField:
+            presenter?.didEditText(type: .odo, text: sender.text)
+        case litresTextField:
+            presenter?.didEditText(type: .litres, text: sender.text)
+        case eurosTextField:
+            presenter?.didEditText(type: .euros, text: sender.text)
+        default:
+            break
+        }
+    }
+    
+    @IBAction func tapAccept(_ sender: UIButton) {
+        presenter?.tapAccept()
     }
 }

@@ -10,8 +10,14 @@ import Foundation
 
 protocol NewRefuelDataManagerProtocol {
     
+    func saveRefuelWith(newRefuelRequest: NewRefuelRequest, success: @escaping () -> Void, failure: @escaping (BaseError) -> Void)
 }
 
 class NewRefuelDataManager: NewRefuelDataManagerProtocol {
+    
     var apiClient: NewRefuelAPIClientProtocol?
+    
+    func saveRefuelWith(newRefuelRequest: NewRefuelRequest, success: @escaping () -> Void, failure: @escaping (BaseError) -> Void) {
+        apiClient?.saveRefuelWith(newRefuelRequest: newRefuelRequest, success: success, failure: failure)
+    }
 }

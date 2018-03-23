@@ -15,7 +15,7 @@ class User {
     static func getAppDelegateUserId() -> String {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         guard let user = appDelegate.user, let userId = user.userId else { fatalError("No userId in Session") }
-        return "38217388"
-//        return userId
+//        return "38217388"
+        return userId
     }
 }

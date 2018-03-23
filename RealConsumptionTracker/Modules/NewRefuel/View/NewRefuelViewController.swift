@@ -18,6 +18,7 @@ class NewRefuelViewController: BaseViewController, NewRefuelViewControllerProtoc
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var infoLabelHeight: NSLayoutConstraint!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var fullButton: CheckBoxButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,5 +37,11 @@ class NewRefuelViewController: BaseViewController, NewRefuelViewControllerProtoc
         containerView.setShadow()
         self.viewModel = viewModel
         self.title = viewModel.title
+        if viewModel.isNewUser {
+            fullButton.isSelected = true
+            fullButton.isUserInteractionEnabled = false
+        } else {
+            fullButton.isSelected = false
+        }
     }
 }

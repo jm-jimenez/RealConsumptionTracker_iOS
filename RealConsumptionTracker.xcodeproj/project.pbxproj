@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00341CE92064E88000F672A4 /* UIView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00341CE82064E88000F672A4 /* UIView+Util.swift */; };
+		00341CEA2064E88000F672A4 /* UIView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00341CE82064E88000F672A4 /* UIView+Util.swift */; };
 		00EBD0842063A2E800FA8170 /* NoDataFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00EBD0832063A2E800FA8170 /* NoDataFoundView.xib */; };
 		00EBD0852063A2E800FA8170 /* NoDataFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00EBD0832063A2E800FA8170 /* NoDataFoundView.xib */; };
 		00EBD0872063A2F900FA8170 /* NoDataFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EBD0862063A2F900FA8170 /* NoDataFoundView.swift */; };
@@ -119,6 +121,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00341CE82064E88000F672A4 /* UIView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Util.swift"; sourceTree = "<group>"; };
 		00EBD0832063A2E800FA8170 /* NoDataFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataFoundView.xib; sourceTree = "<group>"; };
 		00EBD0862063A2F900FA8170 /* NoDataFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataFoundView.swift; sourceTree = "<group>"; };
 		00EBD0892063AA0D00FA8170 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
@@ -234,6 +237,7 @@
 				1A114ED5205D349E008FB1FB /* String+Util.swift */,
 				1A121C8D205DA34F00EE276C /* Float+Util.swift */,
 				1A132130205E8DAB00A62C07 /* Double+Util.swift */,
+				00341CE82064E88000F672A4 /* UIView+Util.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -754,6 +758,7 @@
 				1A114EDF205D4318008FB1FB /* BaseAPIClient.swift in Sources */,
 				1A114EE5205D4A31008FB1FB /* DashboardAPIClient.swift in Sources */,
 				1A114EE1205D4847008FB1FB /* DashboardInteractor.swift in Sources */,
+				00341CE92064E88000F672A4 /* UIView+Util.swift in Sources */,
 				1A121C92205DA73E00EE276C /* NewRefuelWireframe.swift in Sources */,
 				1A114ED6205D349E008FB1FB /* String+Util.swift in Sources */,
 				1A121C95205DA77C00EE276C /* NewRefuelViewController.swift in Sources */,
@@ -804,6 +809,7 @@
 				1A835013205E6DFA0074F511 /* BaseAPIClient.swift in Sources */,
 				1A835014205E6DFA0074F511 /* DashboardAPIClient.swift in Sources */,
 				1A835015205E6DFA0074F511 /* DashboardInteractor.swift in Sources */,
+				00341CEA2064E88000F672A4 /* UIView+Util.swift in Sources */,
 				1A835016205E6DFA0074F511 /* NewRefuelWireframe.swift in Sources */,
 				1A835017205E6DFA0074F511 /* String+Util.swift in Sources */,
 				1A835018205E6DFA0074F511 /* NewRefuelViewController.swift in Sources */,

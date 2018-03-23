@@ -25,6 +25,7 @@ class DashboardViewController: BaseViewController, DashboardViewControllerProtoc
     }
     
     // MARK: XIB Outlets
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var chartView: UICollectionView!
     
     @IBOutlet weak var topLine: UIView!
@@ -58,6 +59,9 @@ class DashboardViewController: BaseViewController, DashboardViewControllerProtoc
     
     // MARK: - Private methods
     private func configViews() {
+        containerView.layer.cornerRadius = 20
+        containerView.setShadow()
+        
         chartView.delegate = self
         chartView.dataSource = self
         chartView.collectionViewLayout = BottomFlowLayout()

@@ -20,6 +20,7 @@ class RefuelsViewController: BaseViewController, RefuelsViewControllerProtocol {
             tableView.reloadData()
         }
     }
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -38,6 +39,9 @@ class RefuelsViewController: BaseViewController, RefuelsViewControllerProtocol {
     
     private func configViews() {
         self.title = "REFUELS"
+        containerView.layer.cornerRadius = 20
+        tableView.layer.cornerRadius = 20
+        containerView.setShadow()
     }
     
     private func setNavigationBarButton() {

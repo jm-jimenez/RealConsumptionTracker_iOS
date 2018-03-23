@@ -17,6 +17,7 @@ class NewRefuelViewController: BaseViewController, NewRefuelViewControllerProtoc
     private var viewModel: NewRefuelViewModel?
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var infoLabelHeight: NSLayoutConstraint!
+    @IBOutlet weak var containerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,7 @@ class NewRefuelViewController: BaseViewController, NewRefuelViewControllerProtoc
     }
     
     func configViewsWith(viewModel: NewRefuelViewModel) {
+        containerView.setShadow()
         self.viewModel = viewModel
         self.title = viewModel.title
     }

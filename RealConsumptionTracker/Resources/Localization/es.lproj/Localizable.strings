@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  RealConsumptionTracker
+
+  Created by José María Jiménez on 17/03/2018.
+  Copyright © 2018 José María Jiménez. All rights reserved.
+*/
+
+//TabBar
+"tab_bar_dashboard" = "Principal";
+"tab_bar_refuels" = "Repostajes";
+
+//Errors
+"error_generic" = "Algo ha ido mal.";

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j87-f9-ja0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="alK-F9-Stz">
+            <objects>
+                <viewController id="j87-f9-ja0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sqO-Wv-0nm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="fuel" translatesAutoresizingMaskIntoConstraints="NO" id="zVZ-Ye-TzL">
+                                <rect key="frame" x="102.5" y="145" width="170" height="170"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real Consumtion Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96U-0Z-1wV">
+                                <rect key="frame" x="48" y="436" width="278.5" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="96U-0Z-1wV" firstAttribute="centerX" secondItem="zVZ-Ye-TzL" secondAttribute="centerX" id="36F-4r-pgT"/>
+                            <constraint firstItem="96U-0Z-1wV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6df-ws-9AF" secondAttribute="leading" constant="16" id="Vs2-OC-bCc"/>
+                            <constraint firstItem="zVZ-Ye-TzL" firstAttribute="top" secondItem="6df-ws-9AF" secondAttribute="top" constant="125" id="a2L-3V-V4G"/>
+                            <constraint firstItem="zVZ-Ye-TzL" firstAttribute="centerX" secondItem="6df-ws-9AF" secondAttribute="centerX" id="fvT-MB-U4g"/>
+                            <constraint firstItem="96U-0Z-1wV" firstAttribute="top" secondItem="zVZ-Ye-TzL" secondAttribute="bottom" constant="121" id="kwk-Cj-bhe"/>
+                            <constraint firstItem="6df-ws-9AF" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="96U-0Z-1wV" secondAttribute="trailing" constant="16" id="u94-QR-ubb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6df-ws-9AF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PaF-Da-HZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="-179.46026986506749"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fuel" width="170" height="170"/>
+    </resources>
+</document>

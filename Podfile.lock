@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (4.7.0)
+  - AlamofireObjectMapper (5.0.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.0)
+  - DynamicBlurView (2.0.2)
+  - KeychainAccess (3.1.0)
+  - ObjectMapper (3.1.0)
+  - PopupDialog (0.7.1):
+    - DynamicBlurView (~> 2.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - AlamofireObjectMapper (~> 5.0)
+  - KeychainAccess (~> 3.1)
+  - PopupDialog (~> 0.7)
+  - SVProgressHUD (~> 2.2.5)
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: ddac15ab620259602a5d107ed71e60fb92922589
+
+COCOAPODS: 1.4.0
